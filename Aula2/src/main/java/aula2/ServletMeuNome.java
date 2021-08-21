@@ -1,4 +1,4 @@
-package Aula02;
+package aula2;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -10,16 +10,16 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class ServletAgenda
+ * Servlet implementation class ServletMeuNome
  */
-@WebServlet("/ServletAgenda")
-public class ServletAgenda extends HttpServlet {
+@WebServlet("/ServletMeuNome")
+public class ServletMeuNome extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public ServletAgenda() {
+    public ServletMeuNome() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -28,13 +28,11 @@ public class ServletAgenda extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-PrintWriter saida = response.getWriter();
+		PrintWriter saida = response.getWriter();
 		
-		saida.write("<HTML><BODY>Nome: Gustavo<br>Telefone: 99999999<br>Data de Nascimento:29/12/2001</BODY></HTML>");
+		saida.write("<HTML><BODY>Meu nome é Gustavo Lopes.</BODY></HTML>");
 		
 		saida.close();
+
 	}
-
-
-
 }
