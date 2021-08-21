@@ -7,6 +7,7 @@
 <title>Aula de Quinta-Feira</title>
 </head>
 <body>
-<p>Olá, mundo!</p>
+	<a href="ServletQualMeuNome">Qual o meu nome?</a><br><br>
+	<a href="ServletAgenda">Agenda do Usuário:</a>
 </body>
 </html>
