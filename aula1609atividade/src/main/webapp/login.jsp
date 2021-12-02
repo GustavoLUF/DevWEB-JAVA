@@ -13,7 +13,8 @@
 protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
     HttpSession s = req.getSession();
     s.getAttribute("user");
-    s.getAttribute("senha");}</script>
+    s.getAttribute("senha");}
+</script>
 	<form action="ServletLogin" method='post'>
 		Usuário: <input type="text" name="usuario1"><br>
 		Senha: <input type="password" name="senha1"><br>
